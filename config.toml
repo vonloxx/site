@@ -1,0 +1,4 @@
+baseURL = "https://marco.zyxplay.com/"
+languageCode = "en-us"
+title = "Hi! I'm Marco."
+theme = "ananke"
