@@ -1,0 +1,82 @@
+a.logo {
+  display: flex;
+  align-items: center;
+}
+
+a.logo .logo-wrapper {
+  position: relative;
+  width: 82px;
+  border: solid 4px #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px 30px 0;
+  overflow: hidden;
+  z-index: 1;
+  animation-duration: 5s;
+  animation-name: logo-pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 0.2s ease-in-out;
+}
+
+a.logo .logo-wrapper.fixed {
+  position: fixed;
+  transform: scale(0.5);
+}
+
+a.logo .logo-wrapper.fixed:hover {
+  transform: scale(1);
+}
+
+a.logo .logo-wrapper img {
+  display: block;
+  position: relative;
+  transform: translateY(130px);
+  animation-duration: 0.3s;
+  animation-name: logo-slidein;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+a.logo .title {
+  padding: 15px;
+  width: 200px;
+  transform: translateX(-160px);
+  opacity: 0;
+  z-index: 0;
+  animation-duration: 0.3s;
+  animation-name: title-slidein;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes logo-pulse {
+  from {
+    background-color: rgba(255, 255, 255, 0.4); 
+  }
+
+  to {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes logo-slidein {
+  from {
+    transform: translateY(130px); 
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes title-slidein {
+  from {
+    transform: translateX(-160px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
