@@ -1,5 +1,8 @@
 baseURL = "https://marco.zyxplay.com/"
 languageCode = "en-us"
-title = "Hi! I'm Marco."
+title = "Marco Fernandes. Developer. Of many things."
 theme = "ananke"
 publishDir = "docs"
+[params]
+  logo = "/images/marco-2.png"
+  custom_css = ["css/custom.css"]
