@@ -6,7 +6,7 @@ proxywallet 54da405c7f0E089b0689f983C4DcA207D314ead6
 proxypool1 eu1.ethermine.org:4444
 proxypool2 eu1.ethermine.org:14444
 flags --cl-global-work 8192 --farm-recheck 200
-globalfan 85
+globalfan 75
 # globalcore 1150
 # globalmem 2240
 # globalcore 1050
